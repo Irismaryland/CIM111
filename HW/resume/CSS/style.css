@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Staatliches');
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Staatliches');
+  body{background-color: pink}
+
+a{
+color: magenta;
+text-decoration: none;
+font-size: 18px
+}
+
+a:hover {
+color: green;
+text-decoration: underline overline;
+background-color: yellow;
+}
+  h1 {
+    color: #6B8E23;
+  }
+#specialFont {font-family: 'Staatliches', cursive;}
+#specialFont2 {font-family: 'Indie Flower', cursive;}
+#specialFont3 {font-family: 'Libre Barcode 39 Text', cursive;}
+#header {
+background: red;
+}
+#header2 {background: purple}
+.yellow {color: yellow}
+.orange {color: orange}
+.red {color: red}
+.purple {color: purple}
