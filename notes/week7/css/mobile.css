@@ -1,0 +1,23 @@
+@import "desktop.css";
+    body{
+    background-color: black;
+  }
+
+  #grid1 {
+    display: block;
+
+
+  }
+
+  section{
+    width: 100%;
+    height: auto;
+    background-color: purple;
+    margin-bottom: 10px;
+  }
+
+  #grid1
+  {display: block;}
+
+  #grid2
+  {display: block;}

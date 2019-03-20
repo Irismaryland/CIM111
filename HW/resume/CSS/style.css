@@ -2,7 +2,16 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Staatliches');
 @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Staatliches');
   body{background-color: pink}
-
+div{
+    border: 0.5rem outset pink;
+    outline: 0.5rem solid khaki;
+    box-shadow: 0 0 0 2rem skyblue;
+    border-radius: 12px;
+    font: bold 1rem sans-serif;
+    margin: 2rem;
+    padding: 1rem;
+    outline-offset: 0.5rem;
+  }
 a{
 color: magenta;
 text-decoration: none;

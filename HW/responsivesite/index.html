@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This is my responsive site!</title>
+    <style>
+    @import "desktop.css";
+        body{
+        background-color: black;
+      }
+
+      #grid1 {
+        display: block;
+
+
+      }
+
+      section{
+        width: 100%;
+        height: auto;
+        background-color: purple;
+        margin-bottom: 10px;
+      }
+
+      #grid1
+      {display: block;}
+
+      #grid2
+      {display: block;}
+    @import url('https://fonts.googleapis.com/css?family=Cinzel');
+    @import url('https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative');
+
+
+    header{
+        width: 80%;
+        height: 100px;
+        background-color:white;
+        margin: 0 auto;
+        font-size: 80px
+        a
+      }
+
+    main{
+      width: 80%;
+      height: auto;
+      background-color: pink;
+      margin: 0 auto;
+    }
+
+    footer{
+      width: 80%;
+    height: 100px;
+    background-color: white;
+    margin: 0 auto;
+    }
+
+
+
+      #grid1 {
+        display: grid;
+        /* <!-- using exact dimensions  -->
+        <!-- grid-template-row: 200px; -->
+        <!-- grid-template-columns:300px 300px 300px; --> */
+
+        grid-template-row: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+      }
+
+
+
+      #grid2 {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 20px;
+        margin-bottom: 20px;
+      }
+
+      .imagegallery{
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      header{
+          width: 80%;
+          height: 100px;
+          background-color:white;
+          margin: 0 auto;
+
+        }
+
+      body{
+        background-color: white;
+        font-family: sans-serif;
+        color: black;
+        font-size: 20px;
+      }
+      h1{
+        color: white;
+      }
+#specialFont2 {font-family: 'Cinzel Decorative', cursive;
+text-align: center;
+color: black;
+}
+      #specialFont {
+        font-family: 'Cinzel', cursive;
+        color: black;
+      }
+
+
+
+      /* @media only screen and (min-width: 480px) {
+        body {background-color: black;}
+      }
+
+      @media only screen and (max-width: 400px) {
+        body {background-color: green;}
+        #specialFont {font-family: 'Cinzel', cursive;
+      } */
+}
+
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <header >
+
+      <h1 id="specialFont2">Interior Design</h1>
+  </header>
+
+<main>
+  <div id="grid1">
+
+  <section id="specialFont">In recent times, we have seen less become more and sleek become sexy. It is easy to say that now is the peak of minimalism especialy in interior design and architecture. From the seamless glass windows to stylish construction, it is easy to see why these modern homes are aking over the market!
+  </section>
+  <section id="specialFont">As over the top and extra designs fade, the simplistic designs of the minimalist take over  the home decor scene. This aerodynamic theme can be seen throughout the infrastructure of many of today's homes  and also in the art pieces and unique furnishings on the interior.
+    </section>
+  <section id="specialFont">Have you ever heard of a "smart house"? Many homes have also advanced technologically. These advancements include features that take simple living even farther. With special sound systems, customizable lighting arrangements, and smart
+    </section>
+
+    </div>
+    <div id="grid2">
+      <img class="imagegallery" src="https://image.shutterstock.com/z/stock-photo-big-modern-beautiful-house-683283169.jpg">
+        <img class="imagegallery" src="https://cdn.pixabay.com/photo/2016/06/24/10/47/architecture-1477041_1280.jpg">
+          <img class="imagegallery" src="https://cdn.pixabay.com/photo/2018/02/13/09/39/modern-minimalist-bathroom-3150293_1280.jpg">
+            <img class="imagegallery" src="https://cdn.pixabay.com/photo/2015/10/20/18/57/furniture-998265_1280.jpg">
+              <img class="imagegallery" src="https://cdn.pixabay.com/photo/2015/11/07/21/29/living-1032732_1280.jpg">
+              <img class="imagegallery" src="https://cdn.pixabay.com/photo/2018/07/15/13/04/living-room-3539587_1280.jpg">
+
+    </div>
+</main>
+
+<footern id="specialFont"> Interior design is so fun!
+</footer>
+
+
+  </body>
+
+  </html>
