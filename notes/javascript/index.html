@@ -9,6 +9,20 @@
     <h1 id="click2">Click here to hide</h1>
     <p id="hideInfo">This is more info</p>
     <h1 id="mouseOverOut">Mouse over and out to see a change in css</h1>
+
+    <h1 id="toggle">Toggle Info</h1>
+    <p id="toggleInfo"></p>
+
+    <ul>
+    <li id="info1">Info 1</li>
+    <li id="info2">Info 2</li>
+    <li id="info3">Info 3</li>
+    <li id="info4">Info 4</li>
+    </ul>
+
+    <div id="replaceText">
+
+    </div>
     <!-- Step 1 -->
     <!-- Relative Link jquery -->
     <script type="text/javascript" src="JS/jquery.js"> </script>
@@ -16,6 +30,7 @@
   $(document).ready(function(){
       //All jquery code goes below
 
+$("#toggleInfo").hide();
       $("#hideInfo").hide(); //Hides hideInfo
 
       $("#click1").click(function(){
@@ -36,7 +51,21 @@
         $("#mouseOverOut").css("color", "black");
       });
 
+$("#toggle").click(function(){
+  $("#toggleInfo").toggle(1000);
+});
 
+$("#info1").click(function(){
+  $("#replaceText").html("This is info 1");
+});
+$("#info2").click(function(){
+  $("#replaceText").html("This is info 2");
+});
+
+
+
+$("#info4").click(function(){
+  $("#replaceText").html("");
 //End of jquery code
 
   });

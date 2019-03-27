@@ -60,7 +60,10 @@ height: 100px;
 background-color: white;
 margin: 0 auto;
 }
-nav
+nav{
+  border: double;
+  background-color: yellow;
+}
 
 
 
