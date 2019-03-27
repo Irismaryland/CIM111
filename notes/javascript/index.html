@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Intro to Javascript</title>
+  </head>
+  <body>
+    <h1 id="click1">Click here for more info</h1>
+    <h1 id="click2">Click here to hide</h1>
+    <p id="hideInfo">This is more info</p>
+    <h1 id="mouseOverOut">Mouse over and out to see a change in css</h1>
+    <!-- Step 1 -->
+    <!-- Relative Link jquery -->
+    <script type="text/javascript" src="JS/jquery.js"> </script>
+<script type="text/javascript">
+  $(document).ready(function(){
+      //All jquery code goes below
+
+      $("#hideInfo").hide(); //Hides hideInfo
+
+      $("#click1").click(function(){
+
+        $("#hideInfo").show();
+
+      }); //End of click1
+
+      $("#click2").click(function(){
+        $("#hideInfo").hide();
+      });
+
+      $("#mouseOverOut").mouseenter(function(){
+        $("#mouseOverOut").css("color", "pink");
+      });
+
+      $("#mouseOverOut").mouseleave (function(){
+        $("#mouseOverOut").css("color", "black");
+      });
+
+
+//End of jquery code
+
+  });
+
+</script>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+    body{
+    background-color: black;
+  }
+
+  #grid1 {
+    display: block;
+
+
+  }
+
+  section{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: double;
+    background-color: yellow;
+    margin: auto;
+  }
+
+  #grid1
+  {display: block; }
+
+  #grid2
+  {display: block;}
+
+  #grid3
+  {display: block;}
+
+  #grid4
+  {display: block;}
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative');
+
+#navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  text-align: center;
+}
+
+header{
+    width: 80%;
+    height: 100px;
+    background-color:white;
+    margin: 0 auto;
+    font-size: 80px
+    a
+  }
+
+main{
+  width: 80%;
+  height: auto;
+  background-color: pink;
+  margin: 0 auto;
+}
+
+footer{
+  width: 80%;
+height: 100px;
+background-color: white;
+margin: 0 auto;
+}
+nav
+
+
+
+  #grid1 {
+    display: grid;
+    /* <!-- using exact dimensions  -->
+    <!-- grid-template-row: 200px; -->
+    <!-- grid-template-columns:300px 300px 300px; --> */
+
+    grid-template-row: 1fr;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+
+  }
+
+
+
+  #grid2 {
+  display: grid;
+  grid-template-row: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+
+  }
+  #grid3
+  {display: grid;
+    grid-template-row: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;}
+
+    #grid4
+    { display: grid;
+       grid-template-row: 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 10px;
+  }
+  #grid5
+  { display: grid;
+    grid-template-row: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px}
+
+    #grid6
+    { display: grid;
+      grid-template-row: 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 10px}
+
+
+  .imagegallery{
+    width: 80%;
+    margin: auto;
+  }
+
+  header{
+      width: 80%;
+      height: 100px;
+      background-color:white;
+      margin: auto;
+
+    }
+
+  body{
+    background-color: white;
+    font-family: sans-serif;
+    color: black;
+    font-size: 20px;
+  }
+  h1{
+    color: white;
+  }
+#specialFont2 {font-family: 'Cinzel Decorative', cursive;
+text-align: center;
+color: black;
+}
+  .specialFont {
+    font-family: 'Cinzel', cursive;
+    color: black;
+  }
+
+
+
+
+
+
+  }

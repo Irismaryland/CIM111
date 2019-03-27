@@ -3,161 +3,7 @@
 <html>
   <head>
     <title>This is my responsive site!</title>
-    <style>
-    @import "desktop.css";
-        body{
-        background-color: black;
-      }
-
-      #grid1 {
-        display: block;
-
-
-      }
-
-      section{
-        width: 200%;
-        height: auto;
-        margin-bottom: 10px;
-        border: double;
-        background-color: yellow;
-        margin: auto;
-      }
-
-      #grid1
-      {display: block; }
-
-      #grid2
-      {display: block;}
-
-      #grid3
-      {display: block;}
-
-      #grid4
-      {display: block;}
-    @import url('https://fonts.googleapis.com/css?family=Cinzel');
-    @import url('https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative');
-
-
-    header{
-        width: 80%;
-        height: 100px;
-        background-color:white;
-        margin: 0 auto;
-        font-size: 80px
-        a
-      }
-
-    main{
-      width: 80%;
-      height: auto;
-      background-color: pink;
-      margin: 0 auto;
-    }
-
-    footer{
-      width: 80%;
-    height: 100px;
-    background-color: white;
-    margin: 0 auto;
-    }
-    nav
-
-
-
-      #grid1 {
-        display: grid;
-        /* <!-- using exact dimensions  -->
-        <!-- grid-template-row: 200px; -->
-        <!-- grid-template-columns:300px 300px 300px; --> */
-
-        grid-template-row: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 10px;
-
-      }
-
-
-
-      #grid2 {
-      display: grid;
-      grid-template-row: 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 10px;
-    s
-
-      }
-      #grid3
-      {display: grid;
-        grid-template-row: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 10px;}
-
-        #grid4
-        { display: grid;
-           grid-template-row: 1fr;
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-column-gap: 10px;
-      }
-      #grid5
-      { display: grid;
-        grid-template-row: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 10px}
-
-        #grid6
-        { display: grid;
-          grid-template-row: 1fr;
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-column-gap: 10px}
-
-
-      .imagegallery{
-        width: 80%;
-        margin: auto;
-      }
-
-      header{
-          width: 80%;
-          height: 100px;
-          background-color:white;
-          margin: auto;
-
-        }
-
-      body{
-        background-color: white;
-        font-family: sans-serif;
-        color: black;
-        font-size: 20px;
-      }
-      h1{
-        color: white;
-      }
-#specialFont2 {font-family: 'Cinzel Decorative', cursive;
-text-align: center;
-color: black;
-}
-      #specialFont {
-        font-family: 'Cinzel', cursive;
-        color: black;
-      }
-
-
-
-      /* @media only screen and (min-width: 480px) {
-        body {background-color: black;}
-      }
-
-      @media only screen and (max-width: 400px) {
-        body {background-color: green;}
-        #specialFont {font-family: 'Cinzel', cursive;
-      } */
-}
-
-      }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
   </head>
   <body>
@@ -165,11 +11,19 @@ color: black;
     <header >
 
       <h1 id="specialFont2">Interior Design</h1>
-  
+      <nav id="navigation">
+        <a href="#1"> Architecture</a>
+        <a href="#2">Interior</a>
+        <a href="#3">Technologies</a>
+
+
+      </nav>
+
+
   </header>
 
 <main>
-  <h1 id="specialFont">Architecture</h1>
+  <h1 class="specialFont" id="1">Architecture</h1>
   <div id="grid1">
   <section>In recent times, we have seen less become more and sleek become sexy. It is easy to say that now is the peak of minimalism especialy in interior design and architecture. From the seamless glass windows to stylish construction, it is easy to see why these modern homes are taking over the market!
   </section>
@@ -178,16 +32,17 @@ color: black;
     <img class="imagegallery" src="https://image.shutterstock.com/z/stock-photo-big-modern-beautiful-house-683283169.jpg">
       <img class="imagegallery" src="https://cdn.pixabay.com/photo/2016/06/24/10/47/architecture-1477041_1280.jpg">
   </div>
-  <h1 id="specialFont">Interior</h1>
+  <h1 class="specialFont" id="2">Interior</h1>
   <div id="grid3">
       <section>As over the top and extra designs fade, the simplistic designs of the minimalist take over  the home decor scene. This aerodynamic theme can be seen throughout the infrastructure of many of today's homes  and also in the art pieces and unique furnishings on the interior.
         </section>
+      
         </div>
             <div id="grid4">
               <img class="imagegallery" src="https://cdn.pixabay.com/photo/2018/02/13/09/39/modern-minimalist-bathroom-3150293_1280.jpg">
                 <img class="imagegallery" src="https://cdn.pixabay.com/photo/2015/10/20/18/57/furniture-998265_1280.jpg">
               </div>
-              <h1 id="specialFont">Technologies</h1>
+              <h1 class="specialFont" id="3">Technologies</h1>
     <div id="grid5">
       <section>Have you ever heard of a "smart house"? Many homes have also advanced technologically. These advancements include features that take simple living even farther. With special sound systems, customizable lighting arrangements, and smart
         </section>
