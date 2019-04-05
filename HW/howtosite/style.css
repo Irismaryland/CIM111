@@ -1,5 +1,5 @@
 body{
-background-color: black;
+background-color: red;
 }
 
 #button{
@@ -70,4 +70,7 @@ background-color: black;
   background-color: PaleVioletRed;
   border: double;
   width: 70px;
+}
+#surprise {
+  color: pink;
 }
