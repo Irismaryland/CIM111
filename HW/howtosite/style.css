@@ -83,8 +83,13 @@ img{
  padding: 20px;
 }
 ul{
-  margin: auto;
+  margin-right: auto;
   width: 50%;
   border: 3px solid black;
-  padding: 20px;
+  padding: 15px;
+}
+h1{
+text-align: center;}
+body{
+  text-align: center;
 }
