@@ -82,11 +82,11 @@ img{
  width: 40%;
  padding: 20px;
 }
-ul{
-  margin-right: auto;
+li{
+  margin: auto;
   width: 50%;
   border: 3px solid black;
-  padding: 15px;
+  padding: 10px;
 }
 h1{
 text-align: center;}
