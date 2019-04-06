@@ -33,7 +33,7 @@ $(document).ready(function(){
     $("#show5").show(1000)
   });
   $("#button14").click(function(){
-    $("#show4").hide(1000)
+    $("#show5").hide(1000)
   });
   $("#button3").click(function(){
     $("#paragraph").html("Sewing is so fun!")
