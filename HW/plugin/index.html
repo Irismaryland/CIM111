@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My plugin</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
+  </head>
+  <body class="cbp-spmenu-push">
+    <h1>Want To Become a Dog Owner?</h1>
+
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+      <h3> Buy pet supplies here</h3>
+      <a href="https://www.petsmart.com">Petsmart</a>
+      <a href="https://www.petco.com/shop/en/petcostore">Petco</a>
+      <a href="https://www.petland.com">Petland</a>
+    </nav>
+
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+      <h3>Menu</h3>
+      <a href="https://en.wikipedia.org/wiki/Golden_Retriever">Golden Retriever</a>
+      <a href="https://en.wikipedia.org/wiki/Labrador_Retriever#Colour">Labrador Retriever</a>
+      <a href="https://en.wikipedia.org/wiki/Pug">Pug</a>
+      <a href="https://en.wikipedia.org/wiki/Dachshund">Dachshund</a>
+    </nav>
+
+    <nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-top" id="cbp-spmenu-s3">
+      <h3>Shelters in Miami</h3>
+      <a href="https://www8.miamidade.gov/global/animals/home.page">Miami-Dade Rescue</a>
+<a href="https://paws4you.org">Paws 4 You</a>
+<a href="http://www.humanesocietymiami.org">Humane Society of North Miami</a>
+    </nav>
+    <img src="https://cdn.pixabay.com/photo/2016/05/26/13/51/dog-1417208_1280.png" class="center">
+
+    <div class="container">
+      <header class="clearfix">
+
+      </header>
+      <div class="main">
+        <section>
+          <button id="showLeft">Show/Hide for pet  supply stores</button>
+          <button id="showTop">Show/Hide for shelters near Miami</button>
+          <button id="showRight">Show/Hide for info on popular breeds</button>
+        </section>
+      </div>
+    </div>
+
+    <p>If you're interested in adopting a new friend, click to see shelters, where to buy cool supplies, and find out information on some popular breeds!</p>
+
+<ul> Things to keep in mind when adopting
+     <li>Size</li>
+  <li>Upkeep</li>
+  <li>Activness</li>
+  <li>Price</li>
+  <li>Age</li>
+</ul>
+<div class="container">
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="https://cdn.pixabay.com/photo/2015/03/26/09/54/pug-690566_1280.jpg style="width:100%">
+
+  <script src="js/classie.js"></script>
+    <script>
+      var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+        menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+        menuTop = document.getElementById( 'cbp-spmenu-s3' ),
+        menuBottom = document.getElementById( 'cbp-spmenu-s4' ),
+        showLeft = document.getElementById( 'showLeft' ),
+        showRight = document.getElementById( 'showRight' ),
+        showTop = document.getElementById( 'showTop' ),
+        showBottom = document.getElementById( 'showBottom' ),
+        showLeftPush = document.getElementById( 'showLeftPush' ),
+        showRightPush = document.getElementById( 'showRightPush' ),
+        body = document.body;
+
+      showLeft.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( menuLeft, 'cbp-spmenu-open' );
+        disableOther( 'showLeft' );
+      };
+      showRight.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( menuRight, 'cbp-spmenu-open' );
+        disableOther( 'showRight' );
+      };
+      showTop.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( menuTop, 'cbp-spmenu-open' );
+        disableOther( 'showTop' );
+      };
+      showBottom.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( menuBottom, 'cbp-spmenu-open' );
+        disableOther( 'showBottom' );
+      };
+      showLeftPush.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( body, 'cbp-spmenu-push-toright' );
+        classie.toggle( menuLeft, 'cbp-spmenu-open' );
+        disableOther( 'showLeftPush' );
+      };
+      showRightPush.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( body, 'cbp-spmenu-push-toleft' );
+        classie.toggle( menuRight, 'cbp-spmenu-open' );
+        disableOther( 'showRightPush' );
+      };
+
+      function disableOther( button ) {
+        if( button !== 'showLeft' ) {
+          classie.toggle( showLeft, 'disabled' );
+        }
+        if( button !== 'showRight' ) {
+          classie.toggle( showRight, 'disabled' );
+        }
+        if( button !== 'showTop' ) {
+          classie.toggle( showTop, 'disabled' );
+        }
+        if( button !== 'showBottom' ) {
+          classie.toggle( showBottom, 'disabled' );
+        }
+        if( button !== 'showLeftPush' ) {
+          classie.toggle( showLeftPush, 'disabled' );
+        }
+        if( button !== 'showRightPush' ) {
+          classie.toggle( showRightPush, 'disabled' );
+        }
+      }
+    </script>
+
+  </body>
+</html>
