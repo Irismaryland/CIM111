@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fashion</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+<link rel="stylesheet" href="js/script.js">
+<link rel="stylesheet" href="/css/mobile.css">
+    <script src="js/modernizr.custom.js"></script>
+  </head>
+  <body class="cbp-spmenu-push">
+    <h1>Iris's Closet</h1>
+
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+      <h3> My favorite outfits</h3>
+      <a href="index.html">Home</a>
+      <a href="nightime.html">Nightime looks</a>
+      <a href="daytime.html">Daytime Looks</a>
+      <a href="inspo.html">Style Inspos</a>
+    </nav>
+    <img src="images/fair.jpg" class="center">
+
+    <div class="container">
+      <header class="clearfix">
+
+      </header>
+      <div class="main">
+        <section>
+          <button id="showLeft">Show/Hide Menu</button>
+        </section>
+      </div>
+    </div>
+
+    <p>Welcome to Iris's Closet which showases some of my favorite outfits. Enjoy!   <a href="http://www.instagram.com/irismaryland " class="center"> <em>Find more of my outfits here!</em></a></p>
+
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+
+
+  <script src="js/classie.js"></script>
+    <script>
+      var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+        menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+        menuTop = document.getElementById( 'cbp-spmenu-s3' ),
+        menuBottom = document.getElementById( 'cbp-spmenu-s4' ),
+        showLeft = document.getElementById( 'showLeft' ),
+        showRight = document.getElementById( 'showRight' ),
+        showTop = document.getElementById( 'showTop' ),
+        showBottom = document.getElementById( 'showBottom' ),
+        showLeftPush = document.getElementById( 'showLeftPush' ),
+        showRightPush = document.getElementById( 'showRightPush' ),
+        body = document.body;
+
+      showLeft.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( menuLeft, 'cbp-spmenu-open' );
+        disableOther( 'showLeft' );
+      };
+
+
+      function disableOther( button ) {
+        if( button !== 'showLeft' ) {
+          classie.toggle( showLeft, 'disabled' );
+        }
+        if( button !== 'showRight' ) {
+          classie.toggle( showRight, 'disabled' );
+        }
+        if( button !== 'showTop' ) {
+          classie.toggle( showTop, 'disabled' );
+        }
+        if( button !== 'showBottom' ) {
+          classie.toggle( showBottom, 'disabled' );
+        }
+        if( button !== 'showLeftPush' ) {
+          classie.toggle( showLeftPush, 'disabled' );
+        }
+        if( button !== 'showRightPush' ) {
+          classie.toggle( showRightPush, 'disabled' );
+        }
+      }
+    </script>
+
+  </body>
+</html>

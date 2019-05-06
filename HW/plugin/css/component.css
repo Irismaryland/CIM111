@@ -80,6 +80,9 @@ ul {
 	list-style-type: none;
 	text-align: center;
 }
+{box-sizing:border-box}
+
+
 /* Vertical menu that slides from the left or right */
 
 .cbp-spmenu-left {

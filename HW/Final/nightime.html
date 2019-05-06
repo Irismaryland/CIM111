@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fashion</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
+  </head>
+  <body class="cbp-spmenu-push">
+    <h1>Night Time Looks</h1>
+
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+      <h3> My favorite outfits</h3>
+      <a href="index.html">Home</a>
+      <a href="nightime.html">Nightime looks</a>
+      <a href="daytime.html">Daytime Looks</a>
+      <a href="inspo.html">Style Inspos</a>
+    </nav>
+    <img src="images/black.jpg" class="center">
+    <div class="slideshow-container">
+
+    <div class="container">
+      <header class="clearfix">
+
+      </header>
+      <div class="main">
+        <section>
+          <button id="showLeft">Show/Hide Menu</button>
+        </section>
+      </div>
+    </div>
+
+    <p>I really like dressing at night time especially when I go out. Sometimes I get fancy and other times I keep it casual. Scroll  to see some of my favorite nightime looks!</p>
+    <div id="grid2">
+      <img class="imagegallery" src="images/club.jpg">
+        <img class="imagegallery" src="images/vans.jpg">
+        <img class="imagegallery" src="images/bball.jpeg">
+        <img class="imagegallery" src="images/cowboy.jpeg">
+    </div>
+
+  <script src="js/classie.js"></script>
+    <script>
+      var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+        menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+        menuTop = document.getElementById( 'cbp-spmenu-s3' ),
+        menuBottom = document.getElementById( 'cbp-spmenu-s4' ),
+        showLeft = document.getElementById( 'showLeft' ),
+        showRight = document.getElementById( 'showRight' ),
+        showTop = document.getElementById( 'showTop' ),
+        showBottom = document.getElementById( 'showBottom' ),
+        showLeftPush = document.getElementById( 'showLeftPush' ),
+        showRightPush = document.getElementById( 'showRightPush' ),
+        body = document.body;
+
+      showLeft.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( menuLeft, 'cbp-spmenu-open' );
+        disableOther( 'showLeft' );
+      };
+
+
+      function disableOther( button ) {
+        if( button !== 'showLeft' ) {
+          classie.toggle( showLeft, 'disabled' );
+        }
+        if( button !== 'showRight' ) {
+          classie.toggle( showRight, 'disabled' );
+        }
+        if( button !== 'showTop' ) {
+          classie.toggle( showTop, 'disabled' );
+        }
+        if( button !== 'showBottom' ) {
+          classie.toggle( showBottom, 'disabled' );
+        }
+        if( button !== 'showLeftPush' ) {
+          classie.toggle( showLeftPush, 'disabled' );
+        }
+        if( button !== 'showRightPush' ) {
+          classie.toggle( showRightPush, 'disabled' );
+        }
+      }
+    </script>
+
+  </body>
+</html>
