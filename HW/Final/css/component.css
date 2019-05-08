@@ -171,7 +171,6 @@ a {
 {box-sizing:border-box}
 
 
-/* Example media queries */
 
 @media screen and (max-width: 55.1875em){
 
@@ -190,7 +189,7 @@ a {
 
 }
 
-@media screen and (max-height: 40em){
+@media screen and (max-width: 600px){
 
 	.cbp-spmenu-vertical {
 		font-size: 90%;
